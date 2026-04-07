@@ -75,9 +75,9 @@ Model used:
 
 
 
-## ⚙️ Implementation Details
+##  Implementation Details
 
-### 1️⃣ Data Collection & Preprocessing
+### 1️. Data Collection & Preprocessing
 
 * Dataset: TMDB Movie Dataset
 * Cleaned missing values
@@ -92,7 +92,7 @@ Model used:
 
 ---
 
-### 2️⃣ Feature Engineering
+### 2️. Feature Engineering
 
 Each movie is converted into a **rich textual representation**
 
@@ -100,7 +100,7 @@ This improves semantic understanding during embedding.
 
 ---
 
-### 3️⃣ Embedding Generation
+### 3️. Embedding Generation
 
 Using:
 
@@ -113,7 +113,7 @@ SentenceTransformer("all-MiniLM-L6-v2")
 
 ---
 
-### 4️⃣ FAISS Index Creation
+### 4️. FAISS Index Creation
 
 * Normalized embeddings (cosine similarity)
 * Stored using FAISS (IndexFlatIP)
@@ -121,7 +121,7 @@ SentenceTransformer("all-MiniLM-L6-v2")
 
 ---
 
-### 5️⃣ Retrieval Mechanism
+### 5️. Retrieval Mechanism
 
 * User query → embedding
 * FAISS returns top-K similar movies
@@ -129,7 +129,7 @@ SentenceTransformer("all-MiniLM-L6-v2")
 
 ---
 
-### 6️⃣ Prompt Engineering
+### 6️. Prompt Engineering
 
 The LLM is guided using structured prompts:
 
@@ -139,7 +139,7 @@ The LLM is guided using structured prompts:
 
 ---
 
-### 7️⃣ Chatbot Logic
+### 7️. Chatbot Logic
 
 Implemented in chatbot.py:
 
@@ -150,7 +150,7 @@ Implemented in chatbot.py:
 
 ---
 
-### 8️⃣ Streamlit Interface
+### 8️. Streamlit Interface
 
 Provides:
 
