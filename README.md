@@ -1,8 +1,8 @@
 # MovieMate-Chatbot
 NLP movie recommendation chatbot with streamlit ui
-# 🎬 MovieMate – NLP-Based Movie Recommendation Chatbot (RAG System)
+#  MovieMate – NLP-Based Movie Recommendation Chatbot (RAG System)
 
-## 📌 Project Overview
+##  Project Overview
 
 MovieMate is an end-to-end Natural Language Processing (NLP) project that implements a **Retrieval-Augmented Generation (RAG)** pipeline to build an intelligent movie recommendation chatbot.
 
@@ -16,7 +16,7 @@ This project demonstrates how modern AI systems integrate **vector databases + L
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 * Build a conversational movie recommendation system
 * Implement semantic search using embeddings
@@ -26,13 +26,13 @@ This project demonstrates how modern AI systems integrate **vector databases + L
 
 ---
 
-## 🧠 Core Concepts Used
+##  Core Concepts Used
 
-### 🔹 Natural Language Processing (NLP)
+###  Natural Language Processing (NLP)
 
 Used to interpret user queries and extract intent.
 
-### 🔹 Embeddings
+###  Embeddings
 
 Text is converted into dense vector representations using:
 
@@ -42,7 +42,7 @@ These embeddings capture semantic meaning rather than exact words.
 
 ---
 
-### 🔹 Vector Database (FAISS)
+###  Vector Database (FAISS)
 
 FAISS is used to:
 
@@ -52,7 +52,7 @@ FAISS is used to:
 
 ---
 
-### 🔹 Retrieval-Augmented Generation (RAG)
+###  Retrieval-Augmented Generation (RAG)
 
 Instead of relying only on an LLM, the system:
 
@@ -62,7 +62,7 @@ Instead of relying only on an LLM, the system:
 
 ---
 
-### 🔹 Large Language Model (LLM)
+###  Large Language Model (LLM)
 
 Used for:
 
@@ -94,11 +94,7 @@ Model used:
 
 ### 2️⃣ Feature Engineering
 
-Each movie is converted into a **rich textual representation**:
-
-```text
-Title: Inception. Genre: Sci-Fi. Director: Christopher Nolan...
-```
+Each movie is converted into a **rich textual representation**
 
 This improves semantic understanding during embedding.
 
@@ -169,7 +165,7 @@ smatch (e.g., “romcom” vs “romantic comedy”)
 * Handling API/model compatibility issues
 * Ensuring relevant retrieval results
 
----
+
 
 
 
