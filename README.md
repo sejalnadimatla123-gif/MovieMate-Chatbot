@@ -36,7 +36,7 @@ Used to interpret user queries and extract intent.
 
 Text is converted into dense vector representations using:
 
-* `sentence-transformers (all-MiniLM-L6-v2)`
+ sentence-transformers (all-MiniLM-L6-v2)
 
 These embeddings capture semantic meaning rather than exact words.
 
@@ -104,9 +104,9 @@ This improves semantic understanding during embedding.
 
 Using:
 
-```python
+python
 SentenceTransformer("all-MiniLM-L6-v2")
-```
+
 
 * Converts text → vectors
 * Captures meaning (not just keywords)
@@ -116,7 +116,7 @@ SentenceTransformer("all-MiniLM-L6-v2")
 ### 4️⃣ FAISS Index Creation
 
 * Normalized embeddings (cosine similarity)
-* Stored using FAISS (`IndexFlatIP`)
+* Stored using FAISS (IndexFlatIP)
 * Enables fast nearest-neighbor search
 
 ---
@@ -141,7 +141,7 @@ The LLM is guided using structured prompts:
 
 ### 7️⃣ Chatbot Logic
 
-Implemented in `chatbot.py`:
+Implemented in chatbot.py:
 
 * Handles user input
 * Calls retrieval function
